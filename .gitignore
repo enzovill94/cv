@@ -1,0 +1,53 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.nav
+*.snm
+*.vrb
+
+# PDF files
+*.pdf
+
+# Large font files
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# Image files (if large)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# macOS
+.DS_Store
+._*
+
+# Backup files
+*~
+*.bak
+*.backup
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+
+# Build directories
+build/
+dist/
+
+# Overleaf sync files
+.texpadtmp/
+*.latexmain
