@@ -18,7 +18,7 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{templates/awesome-cv}
 
-% Configure page margins with geometry
+% Configure page margins with geometry - more compact margins
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
@@ -44,6 +44,8 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% Make layout more compact but avoid overlapping
+\raggedbottom
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -69,17 +71,15 @@
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
+%	COMPACT VERSION - No page breaks
 %-------------------------------------------------------------------------------
 \input{data/employment.tex}
 \input{data/education.tex}
 \input{data/internship.tex}
-\clearpage
 \input{data/publications.tex}
-\clearpage
 \input{data/seminars.tex}
 \input{data/training.tex}
 % \input{data/honors.tex}
-\clearpage
 % \input{data/outreach.tex}
 \input{data/community.tex}
 \input{data/skills.tex}
