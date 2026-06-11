@@ -1,0 +1,61 @@
+%
+% French compact CV version
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{templates/awesome-cv}
+
+% Configure page margins with geometry - more compact margins
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+\colorlet{awesome}{awesome-nephritis}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Make layout more compact but avoid overlapping
+\raggedbottom
+
+%-------------------------------------------------------------------------------
+%\tPERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\input{data_fr/infos.tex}
+
+\lfooter{\today}
+\cfooter{L. Villanueva~~~·~~~Curriculum Vitae (FR)}
+\rfooter{\thepage/\pageref{LastPage}}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+\makecvfooter
+
+%-------------------------------------------------------------------------------
+%\tCV CONTENT (FRENCH COMPACT VERSION)
+%-------------------------------------------------------------------------------
+\input{data_fr/employment.tex}
+\input{data_fr/education.tex}
+\input{data_fr/internship.tex}
+\input{data_fr/publications.tex}
+\input{data_fr/seminars.tex}
+\input{data_fr/training.tex}
+\input{data_fr/community.tex}
+\input{data_fr/skills.tex}
+\input{data_fr/activities.tex}
+\input{data_fr/other.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}

@@ -2,7 +2,22 @@
     "python-envs.defaultEnvManager": "ms-python.python:conda",
     "python-envs.defaultPackageManager": "ms-python.python:conda",
     "python-envs.pythonProjects": [],
+    "latex-workshop.latex.build.forceRecipeUsage": true,
+    "latex-workshop.latex.recipe.default": "first",
+    "latex-workshop.latex.rootFile.doNotPrompt": true,
+    "latex-workshop.latex.rootFile.useSubFile": false,
     "latex-workshop.latex.recipes": [
+        {
+            "name": "build-all-cvs",
+            "tools": [
+                "xelatex-cv",
+                "xelatex-cv",
+                "xelatex-cv-compact",
+                "xelatex-cv-compact",
+                "xelatex-cv-compact-fr",
+                "xelatex-cv-compact-fr"
+            ]
+        },
         {
             "name": "xelatex",
             "tools": ["xelatex"]
@@ -10,8 +25,38 @@
     ],
     "latex-workshop.latex.tools": [
         {
+            "name": "xelatex-cv",
+            "command": "/Library/TeX/texbin/xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "cv.tex"
+            ]
+        },
+        {
+            "name": "xelatex-cv-compact",
+            "command": "/Library/TeX/texbin/xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "cv_compact.tex"
+            ]
+        },
+        {
+            "name": "xelatex-cv-compact-fr",
+            "command": "/Library/TeX/texbin/xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "cv_compact_fr.tex"
+            ]
+        },
+        {
             "name": "xelatex",
-            "command": "xelatex",
+            "command": "/Library/TeX/texbin/xelatex",
             "args": [
                 "-synctex=1",
                 "-interaction=nonstopmode",
